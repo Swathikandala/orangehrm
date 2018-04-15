@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LoginTest]" parallel="tests">
+  <test thread-count="5" name="login1(failed)" parallel="tests">
+    <parameter name="url" value="http://opensource.demo.orangehrmlive.com"/>
+    <classes>
+      <class name="Mainclass.Test.logintestmaven">
+        <methods>
+          <include name="LoginTest3"/>
+        </methods>
+      </class> <!-- Mainclass.Test.logintestmaven -->
+    </classes>
+  </test> <!-- login1(failed) -->
+</suite> <!-- Failed suite [LoginTest] -->
